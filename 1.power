@@ -1,0 +1,12 @@
+def power(x,y)
+  # x ** y
+  idx = 0
+  total = 1
+    while idx < y
+        total *= x
+    idx += 1
+    end
+   return total
+end
+
+puts power(3,4)
