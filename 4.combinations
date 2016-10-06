@@ -1,0 +1,11 @@
+def combinations(arr, arr2)
+  arr_combinations = []
+    (0..(arr.length - 1)).each do |x|
+      (0..(arr2.length - 1)).each do |y|
+         arr_combinations << arr[x] + arr2[y]
+      end
+    end
+    arr_combinations
+end
+
+puts combinations(['on','in'],['to','rope'])
