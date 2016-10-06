@@ -1,0 +1,8 @@
+def is_prime?(num)
+    (2..(num - 1)).each { |x| return false if num % x == 0 }
+    
+    return true
+end
+
+puts is_prime?(7)
+puts is_prime?(14)
